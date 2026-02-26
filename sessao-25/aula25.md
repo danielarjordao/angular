@@ -98,3 +98,23 @@ ng serve --open
 ```
 
 Esse comando compila a aplicação e inicia um servidor de desenvolvimento. A opção `--open` (ou `-o`) faz com que o navegador seja aberto automaticamente na URL onde a aplicação está sendo servida, geralmente em `http://localhost:4200/`. A partir daí, você pode começar a desenvolver sua aplicação Angular, editando os arquivos na pasta `src/app` e vendo as mudanças refletidas em tempo real no navegador.
+
+### Gerando componentes e serviços
+
+Para gerar um novo componente, use o comando:
+
+```bash
+ng generate component header
+```
+
+Isso criará uma nova pasta chamada `header` dentro da pasta `src/app`, contendo os arquivos necessários para o componente, como `header.component.ts`, `header.component.html`, `header.component.css` e `header.component.spec.ts`.
+
+## Módulos vs Componentes
+
+### Módulos
+
+Módulos são usados para organizar o código em Angular. Eles agrupam componentes, serviços e outros recursos relacionados, facilitando a manutenção e a escalabilidade da aplicação. O módulo principal é o `AppModule`, que é o ponto de entrada da aplicação.
+
+### Componentes
+
+Componentes são as unidades básicas de construção da interface de usuário em Angular. Cada componente é responsável por uma parte específica da interface e é composto por um arquivo TypeScript, um arquivo HTML e um arquivo CSS. Os componentes são declarados em módulos e podem ser reutilizados em diferentes partes da aplicação.
