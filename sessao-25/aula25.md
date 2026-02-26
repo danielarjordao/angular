@@ -109,6 +109,22 @@ ng generate component header
 
 Isso criará uma nova pasta chamada `header` dentro da pasta `src/app`, contendo os arquivos necessários para o componente, como `header.component.ts`, `header.component.html`, `header.component.css` e `header.component.spec.ts`.
 
+Após gerar o componente, você pode usá-lo em seu aplicativo Angular, importando-o no módulo apropriado `app.ts` e adicionando a tag do componente no arquivo `app.html`:
+
+```ts
+import { HeaderComponent } from './header/header.component';
+
+@Component({
+// ...
+    imports: [RouterOutlet, Header],
+// ...
+})
+```
+
+```html
+<app-header></app-header>
+```
+
 ## Módulos vs Componentes
 
 ### Módulos
