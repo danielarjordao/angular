@@ -87,3 +87,14 @@ Siga as instruções para configurar o projeto, escolhendo as opções desejadas
 - **Which stylesheet format would you like to use?** CSS
 
 Esse comando criará uma nova pasta com o nome do projeto, contendo a estrutura básica de um aplicativo Angular.
+
+### Executando a aplicação Angular
+
+Para executar a aplicação Angular, use o comando:
+
+```bash
+cd meu-projeto
+ng serve --open
+```
+
+Esse comando compila a aplicação e inicia um servidor de desenvolvimento. A opção `--open` (ou `-o`) faz com que o navegador seja aberto automaticamente na URL onde a aplicação está sendo servida, geralmente em `http://localhost:4200/`. A partir daí, você pode começar a desenvolver sua aplicação Angular, editando os arquivos na pasta `src/app` e vendo as mudanças refletidas em tempo real no navegador.
