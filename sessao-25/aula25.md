@@ -134,3 +134,15 @@ Módulos são usados para organizar o código em Angular. Eles agrupam component
 ### Componentes
 
 Componentes são as unidades básicas de construção da interface de usuário em Angular. Cada componente é responsável por uma parte específica da interface e é composto por um arquivo TypeScript, um arquivo HTML e um arquivo CSS. Os componentes são declarados em módulos e podem ser reutilizados em diferentes partes da aplicação.
+
+#### O que é um componente?
+
+Um componente é uma parte fundamental de um aplicativo Angular. Ele é responsável por controlar uma parte da interface do usuário e a lógica associada a essa parte. Um componente é composto por três arquivos principais:
+
+- **TypeScript**: Define a lógica do componente, incluindo propriedades, métodos e o comportamento do componente.
+- **HTML**: Define a estrutura da interface do usuário para o componente.
+- **CSS**: Define o estilo visual do componente.
+
+#### O que é um @Component?
+
+O `@Component` é um decorator em Angular que marca uma classe como um componente e fornece metadados que determinam como o componente deve ser processado, instanciado e usado em tempo de execução. Ele é usado para definir a estrutura, o estilo e a lógica de um componente Angular. O `@Component` é essencial para criar componentes em Angular, pois ele permite que você especifique o seletor, o template e os estilos do componente, entre outras configurações.
