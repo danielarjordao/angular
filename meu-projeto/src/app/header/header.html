@@ -1,1 +1,35 @@
-<h1>Hello World!</h1>
+<img [src]="logotipo" alt="Logotipo do meu-projeto" width="400" height="400">
+<h1>{{ titulo }}</h1>
+<button (click)="Clicar()">Clique aqui</button>
+<input type="text" placeholder="Digite algo..." [(ngModel)]="nome">
+<p>{{ nome }}</p>
+@if (isLogado) {
+  <p>Você está logado!</p>
+} @else {
+  <p>Você não está logado!</p>
+}
+@for (name of nomes; track name) {
+  <p>{{ name }}</p>
+}
+
+@switch (tipo) {
+  @case ('admin') {
+    <p>Bem-vindo, administrador!</p>
+  }
+  @case ('user') {
+	<p>Bem-vindo, usuário!</p>
+  }
+  @default {
+    <p>Bem-vindo, visitante!</p>
+  }
+}
+
+<p>Cidade: {{ cidade | uppercase }}</p>
+
+<p>Data de hoje padrão: {{ hoje }}</p>
+
+<p>Data de hoje formatada: {{ hoje | date }}</p>
+
+<p>Data de hoje personalizada: {{ hoje | date:'dd/MM/yyyy' }}</p>
+
+<p>{{ "Daniela" | saudacao }}</p>
